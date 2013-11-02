@@ -23,11 +23,6 @@ extern "C"
 #include <gui/widget.hpp>
 #include <gui/window.hpp>
 
-void greet()
-{
-    std::cout << "hello world!\n";
-}
-
 extern "C" int init(lua_State* L)
 {
     using namespace luabind;
@@ -37,7 +32,6 @@ extern "C" int init(lua_State* L)
 
     module(L, "gui")
     [
-        def("greet", &greet),
         class_< backend_t >("backend_t"),
 /*
         def( "default_coord" default_coord ),
