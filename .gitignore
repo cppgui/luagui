@@ -1,13 +1,25 @@
 # Compiled Object files
-*.slo
 *.lo
 *.o
+*.slo
 
 # Compiled Dynamic libraries
-*.so
+*.dll
 *.dylib
+*.so
 
 # Compiled Static libraries
-*.lai
-*.la
 *.a
+*.la
+*.lai
+*.lib
+
+# Build files
+build/codelite/.b*
+build/codelite/.c*
+build/codelite/*.mk
+build/codelite/*.txt
+build/codelite/Makefile
+debug
+lib
+release
